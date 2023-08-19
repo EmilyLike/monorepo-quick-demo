@@ -1,0 +1,19 @@
+{
+  "name": "@manage/web1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@manage/shared": "workspace:^1.0.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vue-tsc": "^1.8.5"
+  }
+}

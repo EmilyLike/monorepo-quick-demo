@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+   "outDir":"dist", // 输出的目录
+   "sourceMap": true, //采用sourcemap 
+   "target": "es2016", // 目标语法
+   "module": "esnext", // 模块格式
+   "moduleResolution": "node", // 模块解析
+   "strict": false, // 严格模式
+   "resolveJsonModule": true, // 解析json模块
+   "esModuleInterop": true,// 允许通过es6语法引入commonjs模块
+   "jsx":"preserve",// jsx不转义
+   "lib":["esnext","dom"],// 支持的类库esnext及dom
+   "baseUrl": ".",// 当前是以该路径进行查找
+   "paths":{
+    //  "@manage/*":[
+    //   "packages/*/src",
+    //  ], // 即以@manage开头的都去该路径下查找，是个数组
+    "@manage/shared/components":["packages/shared/components"],
+    "@manage/shared/utils":["packages/shared/utils"],
+    "@manage/shared/fetch":["packages/shared/fetch"],
+    "@manage/shared/styles":["packages/shared/styles"],
+    // 或者用*号处理匹配
+    "@manage/shared/*":["packages/shared/*"]
+   }
+  }
+}
